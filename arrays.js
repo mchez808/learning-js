@@ -43,3 +43,37 @@ arrayOfStuff;
 // one more thing about arrays that's different from regular objects:
 // All arrays have a length property, the length at the root level of the array.
 arrayOfStuff.length;
+
+////////////////
+// Array Methods
+////////////////
+var counties = [
+	'Belknap',
+	'Strafford',
+	'Carroll',
+	'Rockingham'
+];
+
+counties[0];
+counties[2];
+
+counties[2] = 'Cheshire';
+counties;
+
+counties[4] = 'Carroll';
+counties;
+
+counties[counties.length] = 'Merrimack';
+counties;
+
+counties.push('Coos');
+counties;
+
+counties.pop();
+
+delete counties[2];
+counties;
+
+counties.splice(2, 1);
+counties;
+counties.length;
